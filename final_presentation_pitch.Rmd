@@ -1,0 +1,74 @@
+---
+title: "Visualizing CLT"
+author: "Zauad Shahreer Abeer"
+date: "October 25, 2018"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	echo = FALSE,
+	message = FALSE,
+	warning = FALSE
+)
+```
+
+## Introduction
+
+This is the final project of the course **Developing Data Products** from **The Johns Hopkins University**.  
+
+It contains two parts-  
+* A shiny app, and,  
+* A reproducible pitch  
+
+This is the reproducible pitch of the shiny app explaining what the app actually does. You can find the app [here](https://shahreyar-abeer.shinyapps.io/shiny/)
+
+
+## Description
+
+This app gives an intuition of the famous **Central Limit Theorem (CLT)** by visualizing various distributions and how their mean is distributed simultaneously.  
+
+**The CLT states that** the sampling distribution of the mean of any random variable will be approximately Normal, given that the sample size is large. We will try to get the intuition through this app.
+
+
+**In order to use the app,** choose a distribution(say Normal) from the drop down menu and change the sample size gradually to observe how the distribution of the mean of x changes!
+
+## Codes
+
+An example of codes used in the app is as follows:
+
+```
+n = 100
+means = numeric()
+for(i in 1:n){
+  x = rnorm(1000)
+  mean = mean(x)
+  means = c(means, mean)
+}
+hist(means)
+
+
+```
+
+<font size="2">*Note: This is not the exact code, the original code is more complex & lengthy so used an example instead.</font>
+
+
+## Results & Conclusions {.smaller}
+
+```{r}
+n = 100
+means = numeric()
+for(i in 1:n){
+  x = rnorm(1000)
+  mean = mean(x)
+  means = c(means, mean)
+}
+hist(means)
+
+
+```
+
+This was the app, I hope you've had as much fun reading about it as I had building!  
+Cheers!
+
+
