@@ -10,3 +10,5 @@ This app gives an intuition of the famous **Central Limit Theorem (CLT)** by vis
 **In order to use the app,** choose a distribution(say Normal) from the drop down menu and change the sample size gradually to observe how the distribution of the mean of x changes!
 
 Find the app [here](https://shahreyar-abeer.shinyapps.io/shiny/)
+
+Link to [slide](https://shahreyar-abeer.github.io/CLT_shiny_app/index.html)
